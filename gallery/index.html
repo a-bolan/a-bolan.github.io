@@ -1,4 +1,4 @@
-figure.gallery-page {
+figure.gallery-group {
   position: relative;
   float: left;
   overflow: hidden;
@@ -9,18 +9,18 @@ figure.gallery-page {
   background: $dark-black;
   -webkit-transform: translate3d(0, 0, 0);
 }
-figure.gallery-page:hover img {
+figure.gallery-group:hover img {
   opacity: 0.4;
   transform: translate3d(0, 0, 0);
 }
-figure.gallery-page:hover .gallery-page-name::City {
+figure.gallery-group:hover .gallery-group-name::after {
   transform: translate3d(0, 0, 0);
 }
-figure.gallery-page:hover p {
+figure.gallery-group:hover p {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
-figure.gallery-page img {
+figure.gallery-group img {
   position: relative;
   margin: 0 !important;
   max-width: none;
@@ -32,7 +32,7 @@ figure.gallery-page img {
   transform: translate3d(-10px, 0, 0);
   object-fit: cover;
 }
-figure.gallery-page figcaption {
+figure.gallery-group figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@ figure.gallery-page figcaption {
   text-transform: uppercase;
   backface-visibility: hidden;
 }
-figure.gallery-page figcaption > a {
+figure.gallery-group figcaption > a {
   position: absolute;
   top: 0;
   right: 0;
@@ -52,7 +52,7 @@ figure.gallery-page figcaption > a {
   z-index: 1000;
   opacity: 0;
 }
-figure.gallery-page p {
+figure.gallery-group p {
   display: -webkit-box;
   overflow: hidden;
   margin: 0;
@@ -66,7 +66,7 @@ figure.gallery-page p {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
-figure.gallery-page .gallery-page-name {
+figure.gallery-group .gallery-group-name {
   position: relative;
   display: -webkit-box;
   overflow: hidden;
@@ -78,7 +78,7 @@ figure.gallery-page .gallery-page-name {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-figure.gallery-page .gallery-page-name:after {
+figure.gallery-group .gallery-group-name:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -89,7 +89,7 @@ figure.gallery-page .gallery-page-name:after {
   transition: transform 0.35s;
   transform: translate3d(-100%, 0, 0);
 }
-.gallery-page-main {
+.gallery-group-main {
   overflow: auto;
   padding: 0 0 0.8rem;
 }
@@ -104,7 +104,7 @@ figure.gallery-page .gallery-page-name:after {
   text-align: inherit;
 }
 @media screen and (max-width: 600px) {
-  figure.gallery-page {
+  figure.gallery-group {
     width: calc(100% - 0.4rem);
   }
 }
